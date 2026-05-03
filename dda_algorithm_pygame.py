@@ -11,10 +11,10 @@ def dda(x1, y1, x2, y2):
 
     step = 1
 
-    dx = abs(x2 - x1)    
-    dy = abs(y2 - y1)    
+    dx = (x2 - x1)    
+    dy = (y2 - y1)    
 
-    if dx > dy:
+    if abs(dx) > abs(dy):
         step = dx
     else:
         step = dy
